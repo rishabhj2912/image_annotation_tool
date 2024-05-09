@@ -8,7 +8,7 @@ function ImageUpload({ token }) {
     const [customLabel, setCustomLabel] = useState('');
     const [useCustomLabel, setUseCustomLabel] = useState(false);
 
-    const predefinedLabels = ['Label 1', 'Label 2', 'Label 3', 'Other']; // Example labels
+    const predefinedLabels = ['None', 'Dog', 'Human', 'Airplane', 'House',  'Other']; // Example labels
 
     const onDrop = (acceptedFiles) => {
         setFiles(currentFiles => [...currentFiles, ...acceptedFiles]);
