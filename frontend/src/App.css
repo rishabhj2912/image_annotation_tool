@@ -1,0 +1,107 @@
+/* App.css - Update your existing styles or create new */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+    margin: 0;
+    padding: 20px;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+input[type="text"], input[type="password"], input[type="file"], select {
+    width: 100%; /* Full width */
+    padding: 12px 20px; /* Ample padding */
+    margin: 8px 0; /* Spacing between elements */
+    display: inline-block; /* Necessary for layouts */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 4px; /* Rounded corners for modern look */
+    box-sizing: border-box; /* Border and padding included in width */
+    background-color: #f8f9fa; /* Light grey background */
+    transition: border-color 0.3s; /* Smooth transition for focus */
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="file"]:focus, select:focus {
+    border-color: #80bdff; /* Highlight focus */
+    outline: none; /* Remove default focus outline */
+}
+
+
+button {
+    background-image: linear-gradient(45deg, #6a82fb, #fc5c7d);
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+    margin-top: 10px;
+    width: 100%;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.dropzone {
+    border: 2px dashed #007bff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f8f9fa;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    color: #666;
+}
+/* Navigation Bar */
+nav {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* Space between elements */
+    align-items: center;
+    font-size: 16px; /* Readable font size */
+}
+
+nav a, nav button {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    background: linear-gradient(to right, #6a82fb, #fc5c7d); /* Gradient background */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+}
+
+nav a:hover, nav button:hover {
+    background: linear-gradient(to right, #fc5c7d, #6a82fb); /* Hover effect */
+    transform: scale(1.05); /* Slight pop effect */
+}
+
+/* Specific styles for the logout button to ensure it doesn't stretch too much */
+nav button.logout-button {
+    padding: 8px 20px; /* Adequate padding */
+    max-width: 150px; /* Maximum width */
+}
